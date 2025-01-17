@@ -54,9 +54,9 @@ json : <br>
 ---"Notes:
 Ensure your YouTube video URL and thumbnail URL are valid.<br>
 Test the application thoroughly to confirm all functionalities are working as expected.<br>
-If you encounter issues, feel free to ask for assistance! "
+If you encounter issues, feel free to ask for assistance! "---
 
-##################################################################################################################
+#############################################################
 
 
 
