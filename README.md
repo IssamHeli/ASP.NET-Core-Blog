@@ -19,20 +19,29 @@ screenshots :
 
 
 Admin views : 
-![Manage Posts](screenshots/Gerer Posts.png)
-![Post Details](screenshots/Details Post.png)
-![Create Post](screenshots/create post.png)
+![Manage Posts](screenshots/GererPosts.png)
+
+![Post Details](screenshots/DetailsPost.png)
+
+![Create Post](screenshots/createpost.png)
+
 ![Messages](screenshots/Messages.png)
-![Manage Categories](screenshots/gerer categorie.png)
+
+![Manage Categories](screenshots/gerercategorie.png)
 
 
 Public  views : 
 
 ![Priority Clips Image 1](screenshots/priorityclipsimg1.png)
-![Loading Posts](screenshots/loading posts.png)
-![Posts with Categories](screenshots/posts with categories.png)
+
+![Loading Posts](screenshots/loadingposts.png)
+
+![Posts with Categories](screenshots/postswithcategories.png)
+
 ![About Us](screenshots/aboutus.png)
+
 ![Contact Us](screenshots/contactus.png)
-![Thank You](screenshots/thank you .png)
+
+![Thank You](screenshots/thankyou.png)
 
 
