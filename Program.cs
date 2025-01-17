@@ -8,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+
+// i add sqlServerOptionsAction because i am using free database .
 builder.Services.AddDbContext<DBContextApplication>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("StringChainCnx"),sqlServerOptionsAction=>sqlServerOptionsAction.EnableRetryOnFailure(maxRetryCount:3,maxRetryDelay:TimeSpan.FromSeconds(2),errorNumbersToAdd:null)));
 builder.Services.AddSession(options => { options.IdleTimeout = TimeSpan.FromMinutes(30); });// Set to 30 minutes (adjust as needed)
 
