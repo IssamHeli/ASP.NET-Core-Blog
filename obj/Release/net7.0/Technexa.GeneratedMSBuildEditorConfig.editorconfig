@@ -1,0 +1,133 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Technexa
+build_property.RootNamespace = Technexa
+build_property.ProjectDir = /Users/macgr/Projects/Technexa/Technexa/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/macgr/Projects/Technexa/Technexa
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/Admin/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/Categorie/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/Categorie/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/Categorie/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/Categorie/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/Categorie/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/HomeAcces/DetailsPublic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZUFjY2VzL0RldGFpbHNQdWJsaWMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/HomeAcces/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZUFjY2VzL1ByaXZhY3kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/HomeAcces/SearchByCategorie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZUFjY2VzL1NlYXJjaEJ5Q2F0ZWdvcmllLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/HomeAcces/ThankYou.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZUFjY2VzL1RoYW5rWW91LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/HomeAcces/_PostList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZUFjY2VzL19Qb3N0TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/HomeAcces/_PostListErrorSql.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZUFjY2VzL19Qb3N0TGlzdEVycm9yU3FsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/HomeAcces/_PostListNonLoading.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZUFjY2VzL19Qb3N0TGlzdE5vbkxvYWRpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/Message/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVzc2FnZS9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/Message/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVzc2FnZS9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/Message/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVzc2FnZS9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/Message/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVzc2FnZS9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/Message/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVzc2FnZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/Post/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9zdC9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/Post/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9zdC9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/Post/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9zdC9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/Post/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9zdC9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/Post/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9zdC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/macgr/Projects/Technexa/Technexa/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-n1p7chowqx

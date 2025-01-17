@@ -1,0 +1,62 @@
+@model Technexa.Models.Post
+
+@{
+    ViewData["Title"] = "Create";
+}
+<br />
+<br />
+<br />
+<div class="container">
+    <h1>Create Post</h1>
+
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Title" class="control-label"></label>
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label"></label>
+                    <input asp-for="Description" class="form-control" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="SrcYoutubeVedio" class="control-label"></label>
+                    <input asp-for="SrcYoutubeVedio" class="form-control" />
+                    <span asp-validation-for="SrcYoutubeVedio" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Srcimage" class="control-label"></label>
+                    <input asp-for="Srcimage" class="form-control" />
+                    <span asp-validation-for="Srcimage" class="text-danger"></span>
+                </div>
+                <label class="control-label">Categorie :</label>
+                <select id="categoriesDropdown" name="categorie" class="form-control">
+                    @foreach (SelectListItem category in (SelectList)ViewBag.Categories)
+                    {
+                        <option value="@category.Value">@category.Text</option>
+                    }
+                </select>
+                <div class="form-group">
+                    <label asp-for="DateCreated" class="control-label"></label>
+                    <input asp-for="DateCreated" class="form-control" />
+                    <span asp-validation-for="DateCreated" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a class="btn btn-primary" asp-action="Index">Back to List</a>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

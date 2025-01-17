@@ -1,0 +1,102 @@
+﻿@model IEnumerable<Technexa.Models.Post>
+<br />
+<br />
+<br />
+
+<amp-auto-ads type="adsense"
+              data-ad-client="ca-pub-1604146778294099">
+</amp-auto-ads>
+
+
+
+
+
+<div class="container">
+
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+    <article>
+        @foreach (var item in Model)
+        {
+            if (item.idpost.ToString() == ViewBag.idselected)
+            {
+                ViewData["Title"] = item.Title;
+                <h2>@Html.DisplayFor(modelItem => item.Title)</h2>
+
+                <h5>@Html.DisplayFor(modelItem => item.Description)</h5>
+                <div class="video-wrapper">
+                    <iframe src="@Html.DisplayFor(modelItem => item.SrcYoutubeVedio)" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <br />
+
+            }
+        }
+
+    </article>
+
+</div>
+<br />
+<br />
+<div class="container">
+    <section alt="Related Posts">
+        <h4>Post With Similar Categorie :</h4>
+        <div class="post-grid" id="Posts">
+            @foreach (var item in Model)
+            {
+
+                if (item.idpost.ToString() != ViewBag.idselected)
+                {
+
+                    <section class="post-card">
+                        <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
+                        <!--
+                           if we whant to use api youtube for getting tumbnail
+                            <div class="thumbnailContainer img-fluid" data-video-id="Alobasc item.Srcimage"></div>
+
+                        -->
+                        <img class="img-fluid" src="https://i.ytimg.com/vi/@item.Srcimage/mqdefault.jpg" alt="@item.Title" />
+
+                        <br />
+                        <div>
+                            @{
+                                string description = item.Description; // Replace 'Model.Description' with your actual property
+                                string[] words = description.Split(' ');
+                                int wordsToShow = 30;
+
+                                if (words.Length > wordsToShow)
+                                {
+
+                                    string truncatedDescription = string.Join(" ", words.Take(wordsToShow));
+
+                                    <br />
+                                    <h6>@Html.Raw(truncatedDescription + "..." /* Add ellipsis if truncated */)</h6>
+                                }
+                                else
+                                {
+
+                                    <H6>@Html.Raw(description)</H6>
+                                }
+                            }
+                        </div>
+
+
+                        <a class="btn btn-primary rounded-pill px-3" asp-action="DetailsPublic" asp-route-id="@item.idpost">Read More </a>
+                        <br />
+                        <h7>Categorie : @Html.DisplayFor(modelItem => item.categorie)</h7>
+                        <br />
+
+
+                    </section>
+                }
+            }
+
+
+
+        </div>
+
+
+    </section>
+
+</div>
+
+

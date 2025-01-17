@@ -1,0 +1,150 @@
+﻿@using PagedList;
+@model IPagedList<Technexa.Models.Post>
+
+
+<section alt="Posts" id="Posts" class="container">
+
+    <div class="container">
+        <form asp-controller="HomeAcces" asp-action="SearchByCategorie">
+            <H2>Filter By Categories : </H2>
+            <div class="flexdiv">
+                <div class="flex1">
+                    <select id="categoriesDropdown" name="categorie" class="form-control">
+                        @foreach (SelectListItem category in (SelectList)ViewBag.Categories)
+                        {
+                            <option value="@category.Value">@category.Text</option>
+                        }
+                    </select>
+                </div>
+                <div class="flex2">
+
+                    <button type="submit" class="btn btn-primary rounded-pill px-3">Search</button>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+
+
+    <hr />
+    <br />
+
+    <h2>Top Posts Viewed  </h2>
+    <br />
+
+    <div classe="container">
+        <div class="pagination-container">
+            @if (Model.PageCount > 1)
+            {
+                <ul class="pagination">
+                    @if (Model.HasPreviousPage)
+                    {
+                        <li class="page-item">
+                            <a class="page-link pe-auto" id="paginationpointer" onclick="loadPosts(@Model.PageNumber -1)" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                    }
+                    @for (int i = 1; i <= Model.PageCount; i++)
+                    {
+                        <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                            <a class="page-link pe-auto" onclick="loadPosts(@i)" id="paginationpointer">@i</a>
+                        </li>
+                    }
+                    @if (Model.HasNextPage)
+                    {
+                        <li class="page-item">
+                            <a class="page-link pe-auto" onclick="loadPosts(@Model.PageNumber +1)" aria-label="Next" id="paginationpointer">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+
+                    }
+                </ul>
+            }
+        </div>
+    </div>
+    <div class="post-grid">
+        @foreach (var item in Model)
+        {
+            <section class="post-card">
+                <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
+                <!--
+                   if we whant to use api youtube for getting tumbnail
+                    <div class="thumbnailContainer img-fluid" data-video-id="Alobasc item.Srcimage"></div>
+
+                -->
+                <img class="img-fluid" src="https://i.ytimg.com/vi/@item.Srcimage/mqdefault.jpg" alt="@item.Title" />
+
+                <br />
+                <div>
+                    @{
+                        string description = item.Description; // Replace 'Model.Description' with your actual property
+                        string[] words = description.Split(' ');
+                        int wordsToShow = 30;
+
+                        if (words.Length > wordsToShow)
+                        {
+
+                            string truncatedDescription = string.Join(" ", words.Take(wordsToShow));
+
+                            <br />
+                            <h6>@Html.Raw(truncatedDescription + "..." /* Add ellipsis if truncated */)</h6>
+                        }
+                        else
+                        {
+
+                            <H6>@Html.Raw(description)</H6>
+                        }
+                    }
+                </div>
+
+
+                <a class="btn btn-primary rounded-pill px-3" asp-action="DetailsPublic" asp-route-id="@item.idpost" title="@item.Title">
+                    Read More <span hidden class="sr-only">about @item.Title</span>
+                </a>
+                <br />
+                <h7>Categorie : @Html.DisplayFor(modelItem => item.categorie)</h7>
+                <br />
+                <div hidden>
+
+                    <h7>Created at : @Html.DisplayFor(modelItem => item.DateCreated)</h7>
+                </div>
+            </section>
+        }
+    </div>
+    <div classe="container">
+        <div class="pagination-container">
+            @if (Model.PageCount > 1)
+            {
+                <ul class="pagination">
+                    @if (Model.HasPreviousPage)
+                    {
+                        <li class="page-item">
+                            <a class="page-link pe-auto" data-page="@Model.PageNumber - 1" onclick="loadPosts(@Model.PageNumber -1)" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                    }
+                    @for (int i = 1; i <= Model.PageCount; i++)
+                    {
+                        <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                            <a class="page-link pe-auto" onclick="loadPosts(@i)" data-page="@i">@i</a>
+                        </li>
+                    }
+                    @if (Model.HasNextPage)
+                    {
+                        <li class="page-item">
+                            <a class="page-link pe-auto" data-page="@Model.PageNumber+1" onclick="loadPosts(@Model.PageNumber +1)" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+
+                    }
+                </ul>
+            }
+        </div>
+    </div>
+
+</section>

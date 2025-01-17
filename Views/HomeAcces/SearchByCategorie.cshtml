@@ -1,0 +1,141 @@
+﻿@using PagedList;
+@model IPagedList<Technexa.Models.Post>
+
+
+@{
+    ViewData["Title"] = "Posts By Categorie: "+ ViewBag.selectedcategorie;
+}
+
+<br />
+<br />
+<br />
+<div class="container">
+
+
+    <div class="container">
+        <form asp-action="SearchByCategorie">
+            <H3>Filter By Categories : </H3>
+            <div class="flexdiv">
+                <div class="flex1">
+                    <select id="categoriesDropdown" name="categorie" class="form-control">
+
+                        @foreach (SelectListItem category in (SelectList)ViewBag.Categories)
+                        {
+                            if (ViewBag.selectedcategorie == category.Text)
+                            {
+
+                                <option value="@category.Value" selected="selected">@category.Text</option>
+                            }
+                            else
+                            {
+
+                                <option value="@category.Value">@category.Text</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="flex2">
+
+                    <button type="submit" class="btn btn-primary rounded-pill px-3">Search</button>
+                </div>
+
+            </div>
+
+        </form>
+        <br />
+    </div>
+    <hr />
+    <h6> Posts By categorie : @ViewBag.selectedcategorie </h6>
+
+    <div class="pagination-container">
+        @if (Model.PageCount > 1)
+        {
+            <ul class="pagination">
+                @if (Model.HasPreviousPage)
+                {
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("SearchByCategorie","Home", new {categorie =  ViewBag.selectedcategorie , page = Model.PageNumber - 1  })" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                }
+                @for (int i = 1; i <= Model.PageCount; i++)
+                {
+                    <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                        <a class="page-link" href="@Url.Action("SearchByCategorie", new { categorie =  ViewBag.selectedcategorie , page = i  })">@i</a>
+                    </li>
+                }
+                @if (Model.HasNextPage)
+                {
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("SearchByCategorie", new {categorie =  ViewBag.selectedcategorie  , page = Model.PageNumber + 1 })" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                }
+            </ul>
+        }
+    </div>
+
+    <div class="post-grid">
+        @foreach (var item in Model)
+        {
+            <section class="post-card">
+                <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
+                <!--<div class="thumbnailContainer img-fluid" data-video-id="alobasc item.Srcimage"></div>-->
+                <img class="img-fluid" src="https://i.ytimg.com/vi/@item.Srcimage/mqdefault.jpg" />
+                @{
+                    string description = item.Description; // Replace 'Model.Description' with your actual property
+                    string[] words = description.Split(' ');
+                    int wordsToShow = 30;
+
+                    if (words.Length > wordsToShow)
+                    {
+                        string truncatedDescription = string.Join(" ", words.Take(wordsToShow));
+                        <h6>@Html.Raw(truncatedDescription + "..." /* Add ellipsis if truncated */)</h6>
+                    }
+                    else
+                    {
+                        <H6>@Html.Raw(description)</H6>
+                    }
+                }
+
+                <a class="btn btn-primary rounded-pill px-3" asp-action="DetailsPublic" asp-route-id="@item.idpost">Read More </a>
+                <br />
+                <h7>Categorie : @Html.DisplayFor(modelItem => item.categorie)</h7>
+                <br />
+            </section>
+        }
+    </div>
+
+    <div class="pagination-container">
+        @if (Model.PageCount > 1)
+        {
+            <ul class="pagination">
+                @if (Model.HasPreviousPage)
+                {
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("SearchByCategorie","Home", new {categorie =  ViewBag.selectedcategorie , page = Model.PageNumber - 1  })" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                }
+                @for (int i = 1; i <= Model.PageCount; i++)
+                {
+                    <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                        <a class="page-link" href="@Url.Action("SearchByCategorie", new { categorie =  ViewBag.selectedcategorie , page = i  })">@i</a>
+                    </li>
+                }
+                @if (Model.HasNextPage)
+                {
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("SearchByCategorie", new {categorie =  ViewBag.selectedcategorie  , page = Model.PageNumber + 1 })" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                }
+            </ul>
+        }
+    </div>
+
+</div>

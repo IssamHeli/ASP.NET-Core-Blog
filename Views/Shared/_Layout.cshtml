@@ -1,0 +1,165 @@
+﻿
+@{
+    string metaDescription = "Welcome to Priority Clips – your premier destination for trending short videos and podcast highlights. Immerse yourself in entertainment with our curated collection, spanning hilarious comedy skits, mind-blowing stunts, heartwarming stories, and jaw-dropping talents. Explore the best of viral content across three categories: Podcast Pickings, Viral Video Delights, and Trendy Tales & Memorable Moments. Stay updated on the latest digital trends and indulge in a world of captivating moments. Join us for an audio adventure with thought-provoking snippets in our podcast offerings. Priority Clips – where entertainment meets innovation.#PodcastHighlights #ViralVideos  #TrendingMoments";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Priority Clips</title>
+    <meta name="description" content="@metaDescription" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Technexa.styles.css" asp-append-version="true" />
+    <link rel="icon" class="iconbrowser" href="~/Images/logo.webp" type="image/x-icon">
+
+
+    <meta name="google-adsense-account" content="ca-pub-1604146778294099">
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-P5SRZ6P2');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BH4YM8XKE6"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-BH4YM8XKE6');</script>
+
+
+
+
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1604146778294099"
+            crossorigin="anonymous"></script>
+
+
+</head>
+
+
+<body class="body">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark  box-shadow " data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand " asp-area="" asp-controller="Home" asp-action="Index">Priority Clips</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active navlink" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  active" href="~/Home/#Posts">Posts</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <form asp-controller="HomeAcces" asp-action="SearchByCategorie">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Category
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    @{
+                                        if (ViewBag.Categories != null)
+                                        {
+                                            @foreach (SelectListItem category in (SelectList)ViewBag.Categories)
+                                            {
+                                                <li>
+                                                    <button class="dropdown-item" value="@category.Value" type="submit"
+                                                            name="categorie">
+                                                        @category.Text
+                                                    </button>
+                                                </li>
+                                            }
+                                        }
+                                        
+                                    }
+                                </ul>
+                            </form>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link active " href="~/Home/#AboutUs">AboutUs</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active " href="~/Home/#ContactUs">Contact Us</a>
+                        </li>
+
+                        @{
+                            if (ViewBag.LoginAdmin != null)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link active " asp-area="" asp-controller="Post" asp-action="Index">Gerer_Posts</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" asp-area="" asp-controller="Categorie" asp-action="Index">Gerer_Categories</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" asp-area="" asp-controller="Message" asp-action="Index">Messages</a>
+                                </li>
+                                <li class="nav-item flex-end">
+                                    <a class="nav-link active" asp-area="" asp-controller="Admin" asp-action="LogOut">Log Out</a>
+                                </li>
+
+                            }
+                        }
+                        <li class="nav-item">
+                            <a class="nav-link active " asp-area="" asp-controller="HomeAcces" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main role="main">
+        @RenderBody()
+    </main>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            <div class="NameAnddescfooter">
+                <h1>Priority Clips </h1>
+                <h4>Where video curation meets excellence .</h4>
+                <h4>Experience the essence of quality content, prioritized for your viewing pleasure .</h4>
+                <h4>Stay in the loop with us as we elevate the standard for video insights and bring you top-notch clips .</h4>
+                <h4>stand out in both relevance and quality.</h4>
+            </div>
+            <div class="social-media-icons">
+                <a href="https://www.youtube.com/channel/UCzSgY_CMsJiqFtb26075JNQ" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/priorityclips" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/priorityclips" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                <!-- Add more social media icons as needed -->
+            </div>
+
+
+
+            &copy; 2023 - Priority Clips - <a asp-area="" asp-controller="HomeAcces" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+

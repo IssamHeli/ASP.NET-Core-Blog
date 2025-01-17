@@ -1,0 +1,237 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@model IPagedList<Technexa.Models.Post>
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5SRZ6P2"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<amp-auto-ads type="adsense"
+              data-ad-client="ca-pub-1604146778294099">
+</amp-auto-ads>
+
+<br />
+<br />
+<div class="justifyimgpost">
+
+    <img src="~/Images/Priority Clips.webp" alt="HomeImage" />
+</div>
+<br />
+
+<div class="container">
+    <!--code to show sections posts and pagination -->
+    <!-- after load the posts and pagination show them here -->
+    <br />
+    <br />
+
+    <div id="loadingPosts">
+        <H2>Filter By Categories : </H2>
+        <div class="flexdiv">
+            <div class="flex1">
+                <select id="categoriesDropdown" class="form-control">
+
+                    <option>Categorie Loading ....</option>
+                </select>
+            </div>
+            <div class="flex2">
+
+                <button class="btn btn-primary rounded-pill px-3">Search</button>
+            </div>
+
+        </div>
+
+        <hr />
+        <div id="alertTimeOutLoading" role="alert" class="alert alert-info">
+            Note: We're using free hosting and database services for this website. You might experience occasional delays in loading posts.
+        </div>
+
+        <br />
+        <div class="loader-wrapper">
+            <h2>Posts Loading </h2>
+            <div class="loader">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <br />
+
+        <div class="pagination-container">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link pe-auto" id="paginationpointer" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item active">
+                    <a class="page-link pe-auto" id="paginationpointer">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link pe-auto" aria-label="Next" id="paginationpointer">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="post-grid">
+            <div class="post-card loading">
+                <div class="skeleton-title"></div>
+                <div class="skeleton-image"></div>
+                <div class="skeleton-description"></div>
+                <button class="btn btn-primary">Read More</button>
+                <h6 class="card-text">categorie : Loading ...</h6>
+            </div>
+            <div class="post-card loading">
+                <div class="skeleton-title"></div>
+                <div class="skeleton-image"></div>
+                <div class="skeleton-description"></div>
+                <button class="btn btn-primary">Read More</button>
+                <h6 class="card-text">categorie : Loading ...</h6>
+            </div>
+            <div class="post-card loading">
+                <div class="skeleton-title"></div>
+                <div class="skeleton-image"></div>
+                <div class="skeleton-description"></div>
+                <button class="btn btn-primary">Read More</button>
+                <h6 class="card-text">categorie : Loading ...</h6>
+            </div>
+            <div class="post-card loading">
+                <div class="skeleton-title"></div>
+                <div class="skeleton-image"></div>
+                <div class="skeleton-description"></div>
+                <button class="btn btn-primary">Read More</button>
+                <h6 class="card-text">categorie : Loading ...</h6>
+            </div>
+            <div class="post-card loading">
+                <div class="skeleton-title"></div>
+                <div class="skeleton-image"></div>
+                <div class="skeleton-description"></div>
+                <button class="btn btn-primary">Read More</button>
+                <h6 class="card-text">categorie : Loading ...</h6>
+            </div>
+            <div class="post-card loading">
+                <div class="skeleton-title"></div>
+                <div class="skeleton-image"></div>
+                <div class="skeleton-description"></div>
+                <button class="btn btn-primary">Read More</button>
+                <h6 class="card-text">categorie : Loading ...</h6>
+            </div>
+        </div>
+
+        <div class="pagination-container">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link pe-auto" id="paginationpointer" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item active">
+                    <a class="page-link pe-auto" id="paginationpointer">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link pe-auto" aria-label="Next" id="paginationpointer">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <br />
+        <div id="alertTimeOutLoading1" role="alert" class="alert alert-info">
+            Note: We're using free hosting and database services for this website. You might experience occasional delays in loading posts.
+        </div>
+
+    </div>
+
+    <div id="PostsContainer">
+        <!-- Posts will be loaded here dynamically -->
+    </div>
+
+
+
+
+    <br />
+    <br />
+    <br />
+    <section alt="About Us" id="AboutUs" class="justifyimgpostAbout">
+        <img class="img-fluid" src="~/Images/AboutUs.webp" alt="About Us" />
+    </section>
+    <br />
+    <br />
+    <br />
+    <section id="ContactUs" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or feedback? Get in touch with us!</p>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contact Information</h5>
+                    <p>Email:heli.issame@gmail.com</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Send us a Message</h3>
+                    <form asp-controller="HomeAcces" asp-action="SendMessage" method="post">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br />
+
+   
+</div>
+<script>
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+        loadPosts();
+        setTimeout(() => {
+            document.querySelectorAll('.alert').forEach(alert => alert.style.display = "block");
+        }, 10000);
+    });
+
+    async function loadPosts(page = 1) {
+        // Send AJAX request to fetch posts
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/HomeAcces/getposts?page=' + page, true);
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200) {
+                    // Inject the response HTML into the PostsContainer
+                    document.getElementById('PostsContainer').innerHTML = xhr.responseText;
+                    document.getElementById('loadingPosts').style.display = "none";
+                }
+            }
+
+        };
+
+        xhr.send();
+    }
+
+
+   
+</script>

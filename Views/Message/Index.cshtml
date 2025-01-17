@@ -1,0 +1,54 @@
+@model IEnumerable<Technexa.Models.Message>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<br />
+<br />
+<br />
+<div class="container">
+    <h1>Messages : </h1>
+
+    <table class="table stripped">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.message)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.message)
+                    </td>
+                    <td>
+                        <a class="btn btn-secondary" asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                        <a class="btn btn-info" asp-action="Details" asp-route-id="@item.id">Details</a> |
+                        <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+<br />
+<br />
+<br />

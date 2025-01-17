@@ -1,0 +1,96 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a {
+  color: #0077cc;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    line-height: 60px;
+    padding: 20px 0;
+    color: white;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.footer a:hover {
+    color: #007bff;
+}
+
+.social-media-icons .social-icon {
+    color: white;
+    font-size: 40px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.social-media-icons .social-icon:hover {
+    color: #007bff;
+}
+
+header{
+    width : 100%;
+}
+nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    border-bottom: solid 1px ;
+}
+
+.navlink :hover {
+    color: #007bff ; 
+}
+
+/* Styling for the logo */
+.navbar-logo {
+    max-height: 40px; /* Adjust logo size for uniformity */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Optional: For small screens, adjust logo size */
+@media (max-width: 767px) {
+    .navbar-logo {
+        max-height: 30px; /* Smaller size on mobile */
+    }
+}

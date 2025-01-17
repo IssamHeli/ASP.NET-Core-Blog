@@ -1,0 +1,97 @@
+/* _content/Technexa/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-n1p7chowqx] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-n1p7chowqx] {
+  color: #0077cc;
+}
+
+.btn-primary[b-n1p7chowqx] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-n1p7chowqx], .nav-pills .show > .nav-link[b-n1p7chowqx] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-n1p7chowqx] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-n1p7chowqx] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-n1p7chowqx] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-n1p7chowqx] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-n1p7chowqx] {
+    bottom: 0;
+    width: 100%;
+    line-height: 60px;
+    padding: 20px 0;
+    color: white;
+}
+.footer a[b-n1p7chowqx] {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.footer a:hover[b-n1p7chowqx] {
+    color: #007bff;
+}
+
+.social-media-icons .social-icon[b-n1p7chowqx] {
+    color: white;
+    font-size: 40px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.social-media-icons .social-icon:hover[b-n1p7chowqx] {
+    color: #007bff;
+}
+
+header[b-n1p7chowqx]{
+    width : 100%;
+}
+nav[b-n1p7chowqx] {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    border-bottom: solid 1px ;
+}
+
+.navlink :hover[b-n1p7chowqx] {
+    color: #007bff ; 
+}
+
+/* Styling for the logo */
+.navbar-logo[b-n1p7chowqx] {
+    max-height: 40px; /* Adjust logo size for uniformity */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Optional: For small screens, adjust logo size */
+@media (max-width: 767px) {
+    .navbar-logo[b-n1p7chowqx] {
+        max-height: 30px; /* Smaller size on mobile */
+    }
+}
