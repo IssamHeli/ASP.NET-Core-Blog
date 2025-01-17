@@ -15,10 +15,15 @@ Update the connection string in the appsettings.json file to match your SQL Serv
 
 3 => dotnet build > dotnet run
 
-screenshots : 
+
+##################################################################################################################
 
 
-Admin views : 
+
+
+
+Admin views :
+
 ![Manage Posts](screenshots/GererPosts.png)
 
 ![Post Details](screenshots/DetailsPost.png)
