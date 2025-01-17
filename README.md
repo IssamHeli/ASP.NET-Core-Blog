@@ -18,7 +18,7 @@ Update the connection string in the appsettings.json file to match your SQL Serv
 screenshots : 
 
 
-Admin view : 
+Admin views : 
 ![Manage Posts](screenshots/Gerer Posts.png)
 ![Post Details](screenshots/Details Post.png)
 ![Create Post](screenshots/create post.png)
@@ -26,7 +26,7 @@ Admin view :
 ![Manage Categories](screenshots/gerer categorie.png)
 
 
-Public  view : 
+Public  views : 
 
 ![Priority Clips Image 1](screenshots/priorityclipsimg1.png)
 ![Loading Posts](screenshots/loading posts.png)
