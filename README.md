@@ -17,19 +17,22 @@ Update the connection string in the appsettings.json file to match your SQL Serv
 
 screenshots : 
 
-public View : 
-(screenshots/priorityclipsimg1.png)
-(screenshots/loading posts.png)
-(screenshots/posts with categories.png)
-(screenshots/aboutus.png)
-(screenshots/contactus.png)
-(screenshots/thank you .png)
-
 
 Admin view : 
-(screenshots/Gerer Posts.png)
-(screenshots/Details Post.png)
-(screenshots/create post.png)
-(screenshots/Messages.png)
-(screenshots/gerer categorie.png)
+![Manage Posts](screenshots/Gerer Posts.png)
+![Post Details](screenshots/Details Post.png)
+![Create Post](screenshots/create post.png)
+![Messages](screenshots/Messages.png)
+![Manage Categories](screenshots/gerer categorie.png)
+
+
+Public  view : 
+
+![Priority Clips Image 1](screenshots/priorityclipsimg1.png)
+![Loading Posts](screenshots/loading posts.png)
+![Posts with Categories](screenshots/posts with categories.png)
+![About Us](screenshots/aboutus.png)
+![Contact Us](screenshots/contactus.png)
+![Thank You](screenshots/thank you .png)
+
 
