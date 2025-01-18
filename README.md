@@ -62,9 +62,10 @@ Fill in the required fields. For videos, ensure you have a YouTube channel. Prov
 *Notes: Ensure your YouTube video URL and thumbnail URL are valid. Test the application thoroughly to confirm all functionalities are working as expected. If you encounter issues, feel free to ask for assistance!*
 
 ---
-## Note
-If you deploy this, do not forget to modify `sitemap.xml` with your actual website URL.  
-check : ASP.NET-Core-Blog/Controllers/HomeAccesController.cs
+## Note 
+If you want to deploy this and add it to the Search Console, do not forget to modify sitemap.xml with your actual website URL.
+
+Check: ASP.NET-Core-Blog/Controllers/HomeAccessController.cs
 
 
 ## Admin Views
