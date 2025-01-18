@@ -42,7 +42,7 @@ namespace Technexa.Controllers
             });
             sitemapNodes.Add(new SitemapNode
             {
-                Location = new Uri(baseUri, Url.Action("Privacy", "Home")).ToString(),
+                Location = new Uri(baseUri, Url.Action("Privacy", "HomeAcces")).ToString(),
                 LastModified = currentDate,
                 ChangeFrequency = SitemapChangeFrequency.Yearly,
                 Priority = 0.8
@@ -50,7 +50,7 @@ namespace Technexa.Controllers
 
             sitemapNodes.Add(new SitemapNode
             {
-                Location = new Uri(baseUri, Url.Action("ThankYou", "Home")).ToString(),
+                Location = new Uri(baseUri, Url.Action("ThankYou", "HomeAcces")).ToString(),
                 LastModified = currentDate,
                 ChangeFrequency = SitemapChangeFrequency.Never,
                 Priority = 0.8
@@ -78,7 +78,7 @@ namespace Technexa.Controllers
                 {
                     sitemapNodes.Add(new SitemapNode
                     {
-                        Location = new Uri(baseUri, Url.Action("SearchByCategorie", "Home", new { categorie = categories[i].Designation, page = x, })).ToString(),
+                        Location = new Uri(baseUri, Url.Action("SearchByCategorie", "HomeAcces", new { categorie = categories[i].Designation, page = x, })).ToString(),
                         LastModified = currentDate,
                         ChangeFrequency = SitemapChangeFrequency.Monthly,
                         Priority = 0.5
@@ -107,7 +107,7 @@ namespace Technexa.Controllers
             foreach (var post in posts)
             {
 
-                var urlvedio = new Uri(baseUri, Url.Action("DetailsPublic", "Home", new { id = post.idpost })).ToString();
+                var urlvedio = new Uri(baseUri, Url.Action("DetailsPublic", "HomeAcces", new { id = post.idpost })).ToString();
                 sitemapNodesvedio.Add(new SitemapNodeVideo
                 {
                     Location = urlvedio,
