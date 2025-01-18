@@ -63,7 +63,7 @@ Fill in the required fields. For videos, ensure you have a YouTube channel. Prov
 
 ---
 ## Note 
-If you want to deploy this and add it to the Search Console, do not forget to modify sitemap.xml with your actual website URL.
+If you want to **deploy** this and add it to  **Google Search Console**, do not forget to modify sitemap.xml with your actual website URL.
 
 Check: ASP.NET-Core-Blog/Controllers/HomeAccessController.cs
 
