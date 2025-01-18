@@ -63,7 +63,7 @@ Fill in the required fields. For videos, ensure you have a YouTube channel. Prov
 
 ---
 ## Note
-If you deploy this, do not forget to modify `sitemap.xml` with your actual website URL.
+If you deploy this, do not forget to modify `sitemap.xml` with your actual website URL.<br>
 check : ASP.NET-Core-Blog/Controllers/HomeAccesController.cs
 
 
