@@ -61,7 +61,7 @@ If you encounter issues, feel free to ask for assistance! "---
 
 
 
-Admin views :
+#Admin views :
 
 ![Manage Posts](screenshots/GererPosts.png)
 
@@ -74,7 +74,7 @@ Admin views :
 ![Manage Categories](screenshots/gerercategorie.png)
 
 
-Public  views : 
+#Public  views : 
 
 ![Priority Clips Image 1](screenshots/priorityclipsimg1.png)
 
