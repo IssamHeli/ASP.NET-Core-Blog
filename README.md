@@ -34,14 +34,14 @@ Access the application in your browser at [http://localhost:5000](http://localho
 ## 5. Admin Login
 Go to the admin login page at:
 
-[YourLocalHost/admin/login](Your_Local_Host/admin/login)
+[Your_Local_Host/admin/login](Your_Local_Host/admin/login)
 
 Log in using the initial admin credentials you added in step 3.
 
 ## 6. Create Categories
 Navigate to the category creation page:
 
-[YourLocalHost/categorie/create](Your_Local_Host/categorie/create)
+[Your_Local_Host/categorie/create](Your_Local_Host/categorie/create)
 
 Add categories as needed. Make sure not to use duplicate IDs, as the database does not have auto-increment set for this table.
 
@@ -50,7 +50,7 @@ Add categories as needed. Make sure not to use duplicate IDs, as the database do
 ## 7. Create Posts
 Navigate to the post creation page:
 
-[YourLocalHost/post/create](YourLocalHost/post/create)
+[Your_Local_Host/post/create](Your_Local_Host/post/create)
 
 Fill in the required fields. For videos, ensure you have a YouTube channel. Provide the following:
 
