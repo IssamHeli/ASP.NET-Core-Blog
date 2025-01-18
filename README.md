@@ -41,7 +41,7 @@ Log in using the initial admin credentials you added in step 3.
 ## 6. Create Categories
 Navigate to the category creation page:
 
-[http://localhost/categorie/create](http://localhost/categorie/create)
+[YourLocalHost/categorie/create](YourLocalHost/categorie/create)
 
 Add categories as needed. Make sure not to use duplicate IDs, as the database does not have auto-increment set for this table.
 
@@ -50,7 +50,7 @@ Add categories as needed. Make sure not to use duplicate IDs, as the database do
 ## 7. Create Posts
 Navigate to the post creation page:
 
-[http://localhost/post/create](http://localhost/post/create)
+[YourLocalHost/post/create](YourLocalHost/post/create)
 
 Fill in the required fields. For videos, ensure you have a YouTube channel. Provide the following:
 
