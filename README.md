@@ -34,14 +34,14 @@ Access the application in your browser at [http://localhost:5000](http://localho
 ## 5. Admin Login
 Go to the admin login page at:
 
-[http://localhost/admin/login](http://localhost/admin/login)
+[Your Local Host/admin/login](Your Local Host/admin/login)
 
 Log in using the initial admin credentials you added in step 3.
 
 ## 6. Create Categories
 Navigate to the category creation page:
 
-[YourLocalHost/categorie/create](YourLocalHost/categorie/create)
+[Your Local Host/categorie/create](Your Local Host/categorie/create)
 
 Add categories as needed. Make sure not to use duplicate IDs, as the database does not have auto-increment set for this table.
 
