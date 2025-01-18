@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "32CXKPvF2aM=",
+  "dgSpecHash": "4NlumN2H7H0=",
   "success": true,
-  "projectFilePath": "/Users/macgr/Desktop/PriorityClips/Technexa.csproj",
+  "projectFilePath": "/Users/macgr/Desktop/ASP.NET-Core-Blog/Technexa.csproj",
   "expectedPackageFiles": [
     "/Users/macgr/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/macgr/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/macgr/Desktop/PriorityClips/Technexa.csproj": {}
+    "/Users/macgr/Desktop/ASP.NET-Core-Blog/Technexa.csproj": {}
   },
   "projects": {
-    "/Users/macgr/Desktop/PriorityClips/Technexa.csproj": {
+    "/Users/macgr/Desktop/ASP.NET-Core-Blog/Technexa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/macgr/Desktop/PriorityClips/Technexa.csproj",
+        "projectUniqueName": "/Users/macgr/Desktop/ASP.NET-Core-Blog/Technexa.csproj",
         "projectName": "Technexa",
-        "projectPath": "/Users/macgr/Desktop/PriorityClips/Technexa.csproj",
+        "projectPath": "/Users/macgr/Desktop/ASP.NET-Core-Blog/Technexa.csproj",
         "packagesPath": "/Users/macgr/.nuget/packages/",
-        "outputPath": "/Users/macgr/Desktop/PriorityClips/obj/",
+        "outputPath": "/Users/macgr/Desktop/ASP.NET-Core-Blog/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/macgr/.nuget/NuGet/NuGet.Config"

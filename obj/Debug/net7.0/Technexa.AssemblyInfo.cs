@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Technexa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72c4e7ff607d95205336d180a842c13f99051ab6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b75abe24e82d0b42ced10da8233d1e8deaa62ea1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Technexa")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Technexa")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
