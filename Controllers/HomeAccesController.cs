@@ -86,7 +86,7 @@ namespace Technexa.Controllers
                 }
             }
 
-
+            /*
             // Add post URLs
 
             var postIds = _context.Posts.Select(P => P.idpost).ToList();
@@ -102,7 +102,7 @@ namespace Technexa.Controllers
                 });
             }
             // Add post URLs vor vedios
-
+            */
             var posts = _context.Posts.ToList();
             foreach (var post in posts)
             {
